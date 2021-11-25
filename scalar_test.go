@@ -36,4 +36,7 @@ func TestNewScalars(t *testing.T) {
 	if got := graphql.NewText(""); got == nil {
 		t.Error("NewText returned nil")
 	}
+	if got := graphql.NewGeoPoint(""); got == nil {
+		t.Error("NewGeoPoint returned nil")
+	}
 }
