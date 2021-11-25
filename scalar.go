@@ -37,6 +37,16 @@ type (
 	// This type is most often used by GraphQL to represent free-form
 	// human-readable text.
 	String string
+
+	// Datetime represents textual datetime as UTF-8 character sequences.
+	// This type is most often used by GraphQL to represent free-form
+	// human-readable text.
+	Datetime string
+
+	// Text represents textual data as UTF-8 character sequences.
+	// This type is most often used by GraphQL to represent free-form
+	// human-readable text.
+	Text string
 )
 
 // NewBoolean is a helper to make a new *Boolean.
@@ -56,3 +66,9 @@ func NewInt64Bit(v Int64Bit) *Int64Bit { return &v }
 
 // NewString is a helper to make a new *String.
 func NewString(v String) *String { return &v }
+
+// NewDatetime is a helper to make a new *Datetime.
+func NewDatetime(v Datetime) *Datetime { return &v }
+
+// NewText is a helper to make a new *Text.
+func NewText(v Text) *Text { return &v }
