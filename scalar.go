@@ -57,6 +57,11 @@ type (
 	// This type is most often used by GraphQL to represent free-form
 	// human-readable text.
 	EmailAddress string
+
+	// InventoryitemableType represents textual data as UTF-8 character sequences.
+	// This type is most often used by GraphQL to represent free-form
+	// human-readable text.
+	InventoryitemableType string
 )
 
 // NewBoolean is a helper to make a new *Boolean.
@@ -88,3 +93,6 @@ func NewGeoPoint(v GeoPoint) *GeoPoint { return &v }
 
 // NewGeoPoint is a helper to make a new *GeoPoint.
 func NewEmailAddress(v EmailAddress) *EmailAddress { return &v }
+
+// NewInventoryitemableType is a helper to make a new *InventoryitemableType.
+func NewInventoryitemableType(v InventoryitemableType) *InventoryitemableType { return &v }
