@@ -62,6 +62,16 @@ type (
 	// This type is most often used by GraphQL to represent free-form
 	// human-readable text.
 	InventoryitemableType string
+
+	// InventoryItemDeviceStatus represents textual data as UTF-8 character sequences.
+	// This type is most often used by GraphQL to represent free-form
+	// human-readable text.
+	InventoryItemDeviceStatus string
+
+	// PreseemStatus represents textual data as UTF-8 character sequences.
+	// This type is most often used by GraphQL to represent free-form
+	// human-readable text.
+	PreseemStatus string
 )
 
 // NewBoolean is a helper to make a new *Boolean.
@@ -96,3 +106,9 @@ func NewEmailAddress(v EmailAddress) *EmailAddress { return &v }
 
 // NewInventoryitemableType is a helper to make a new *InventoryitemableType.
 func NewInventoryitemableType(v InventoryitemableType) *InventoryitemableType { return &v }
+
+// NewInventoryItemDeviceStatus is a helper to make a new *InventoryItemDeviceStatus.
+func NewInventoryItemDeviceStatus(v InventoryItemDeviceStatus) *InventoryItemDeviceStatus { return &v }
+
+// NewPreseemStatus is a helper to make a new *PreseemStatus.
+func NewPreseemStatus(v PreseemStatus) *PreseemStatus { return &v }
