@@ -72,6 +72,11 @@ type (
 	// This type is most often used by GraphQL to represent free-form
 	// human-readable text.
 	PreseemStatus string
+
+	// Subdivision represents textual data as UTF-8 character sequences.
+	// This type is most often used by GraphQL to represent free-form
+	// human-readable text.
+	Subdivision string
 )
 
 // NewBoolean is a helper to make a new *Boolean.
@@ -112,3 +117,6 @@ func NewInventoryItemDeviceStatus(v InventoryItemDeviceStatus) *InventoryItemDev
 
 // NewPreseemStatus is a helper to make a new *PreseemStatus.
 func NewPreseemStatus(v PreseemStatus) *PreseemStatus { return &v }
+
+// NewSubdivision is a helper to make a new *Subdivision.
+func NewSubdivision(v Subdivision) *Subdivision { return &v }
